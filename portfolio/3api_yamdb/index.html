@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title></title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link href="/flask_site/static/img/favicon.png" rel="icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="/flask_site/static/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/flask_site/static/assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/flask_site/static/assets/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/flask_site/static/assets/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/flask_site/static/assets/remixicon/remixicon.css" rel="stylesheet">
+  <link href="/flask_site/static/assets/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/69e2443572.js" crossorigin="anonymous"></script>
+  <link href="/flask_site/static/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="/flask_site/pygments.css">
+</head>
+<body>
+  <main id="main">
+
+<style>
+body::before {
+	background: #040404 url("/static/img/portfolio/post.jpg");
+}
+</style>
+    <div id="portfolio-details" class="portfolio-details">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <h2 class="portfolio-title">API YaMDB</h2>
+          </div>
+          <div class="col-lg-8 portfolio-info">
+            <h3></h3>
+            <ul>
+              <li><strong>Category</strong>: Api</li>
+              <li><strong>Description</strong>: API for review-project. Made in group of students.</li>
+              
+            </ul>
+            <p>
+              <h2>Task</h2>
+<p>Project YaMDb collect reviews on different products.</p>
+<h2>Description</h2>
+<ul>
+<li>Project YaMDb collect instances (Review) from users about different products (Titles). 
+Products are divided on several categories:  «Books», «Films», «Music». The list of instance (Category) can be updated by the admin (e.g. «Fine arts» or «Jewelry»).</li>
+<li>Products by themselves are not represented on YaMDb, you cannot watch film or listen music.</li>
+<li>In each category there are works: books, films or music.
+For example, in the category "Books" there may be works "Sapiens: A Brief History of Humankind" and "I, Robot", and in the category "Music" - the song "Yellow Submarine" by the group "The Beatles" and the second suite of Bach.</li>
+<li>A product can be assigned a genre (Genre) from the list of preset ones (e.g. "Fairy Tale", "Rock" or "Arthouse"). New genres can only be created by the admin.</li>
+<li>Grateful or indignant users leave text reviews (Review) for the products and rate it in the range from 1 to 10 (an integer); 
+an average rating (integer) of the work is forming by users' ratings. A user can leave only one review per product.</li>
+</ul>
+<h2>Role</h2>
+<p>There were 3 developers, who took part in creating this project. I was team-leader, who cooperate with colleagues
+and our instructor. I was responsible for reviews and comments instances, described models, views, configured endpoints,
+defined access rights for CRUD requests. Also, I've added rating system.</p>
+<h2>Tech stack</h2>
+<ul>
+<li>Python 3.9</li>
+<li>Django 2.2.16</li>
+<li>Django Rest Framework 3.12.4</li>
+<li>Simple-JWT 4.7.2</li>
+</ul>
+<h2>Launch in dev-mode</h2>
+<h3>Clone repo and get in the directory</h3>
+<p><code>git clone git@github.com:yasinalizade/api_yamdb.git</code></p>
+<p><code>cd api_yamdb</code></p>
+<h3>Create and activate the virtual environment:</h3>
+<p><code>python -m venv venv</code></p>
+<p><code>source venv/scripts/activate</code></p>
+<h3>Download necessary libraries from requirements.txt:</h3>
+<p><code>pip install -r requirements.txt</code></p>
+<h3>Update migration connections:</h3>
+<p><code>python manage.py migrate</code></p>
+<h3>Upload data from csv-files to check the project:</h3>
+<p>Strictly follow the sequence</p>
+<p><code>python manage.py createsuperuser</code></p>
+<p><code>python manage.py load_users_data</code></p>
+<p><code>python manage.py load_all_data</code></p>
+<p>!OPTIONAL To remove and clean up the database:</p>
+<p><code>python manage.py clear_users_data</code></p>
+<p><code>python manage.py clear_all_data</code></p>
+<h3>Run the project:</h3>
+<p><code>python manage.py runserver</code></p>
+<h2>All accessible urls for API:</h2>
+<p>Detailed API documentation with examples is available at:</p>
+<p><a href="http://127.0.0.1:8000/redoc/">http://127.0.0.1:8000/redoc/</a></p>
+<h2>Authors</h2>
+<p>Students of backend faculty - Ya.Practicum:</p>
+<ul>
+<li>Alizade Yasin</li>
+<li>Sazhenev Kirill</li>
+<li>Ivaykin Yurii</li>
+</ul>
+<p>GitHub: <a href="https://github.com/yasinalizade/api_yamdb">https://github.com/yasinalizade/api_yamdb</a></p>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <script src="/flask_site/static/assets/purecounter/purecounter.js"></script>
+  <script src="/flask_site/static/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/flask_site/static/assets/glightbox/js/glightbox.min.js"></script>
+  <script src="/flask_site/static/assets/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/flask_site/static/assets/swiper/swiper-bundle.min.js"></script>
+  <script src="/flask_site/static/assets/waypoints/noframework.waypoints.js"></script>
+  <script src="/flask_site/static/js/main.js"></script>
+</body>
+</html>
