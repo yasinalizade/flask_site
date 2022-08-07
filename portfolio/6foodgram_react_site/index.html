@@ -43,7 +43,7 @@ body::before {
             <p>
               <h3>Description</h3>
 <p>
-  Web-app with cooking recipes. Anonymous user can get the recipes, also enabled filters on tags for better experience. If user is authenticated, he can get recipes, follow other authors, as well as like recipes, which are collecting on another tab "Favorite". Also, authenticated user can add recipes in shopping cart, and download all neccessary ingredients in PDF-format.
+  Web-app with cooking recipes. Anonymous user can get the recipes, also enabled filters on tags for better experience. If user is authenticated, he can get recipes, follow other authors. User can like recipes, which are collecting on another tab "Favorite". Also, authenticated user can add recipes in shopping cart, and download all neccessary ingredients in PDF-format.
   Backend is linked with frontend via API (django rest framework). There are 4 containers for backend, frontend, nginx, postrgesql, which work together via docker-compose.
 </p>
 
@@ -52,12 +52,12 @@ body::before {
 <h3>Clone repo and get in the directory 'infra'</h3>
 <p><code>git clone git@github.com:yasinalizade/foodgram-project-react.git</code></p>
 <p><code>cd foodgram-project-react/infra</code></p>
-<h3>Launch Docker, migrate data and download ingredients</h3>
+<h3>Launch Docker-Compose, migrate data and download ingredients</h3>
 <p><code>sudo docker-compose up -d</code></p>
 <p><code>docker-compose exec web python manage.py migrate</code>
 <code>docker-compose exec web python manage.py load_ingredients</code>
 <code>docker-compose exec web python manage.py collectstatic --no-input</code></p>
-<p>Finally, the application is able at: http://localhost/</p>
+<p>Finally, the application is able at: <a href="http://localhost/">http://localhost/</a></p>
 <h2>All accessible urls for API:</h2>
 <p>Detailed API documentation with examples is available at:</p>
 <p><a href="http://localhost/api/redoc/">http://localhost/api/redoc/</a></p>
